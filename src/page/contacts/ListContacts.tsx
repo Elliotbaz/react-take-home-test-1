@@ -43,9 +43,9 @@ export default function ListContacts({ onToggleVisibility, onEditContact }: List
         <div className={styles.listContactDiv}>
             <h1>{!isLoading && 'List of Contacts'}</h1>
             <h5>
-                <button className={styles.addButton} onClick={onToggleVisibility}>
+                {!isLoading && <button className={styles.addButton} onClick={onToggleVisibility}>
                     Add Contact
-                </button>
+                </button>}
             </h5>
             {isLoading ? (
                 <h1>Loading contacts...</h1>
