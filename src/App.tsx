@@ -1,10 +1,10 @@
 import React from 'react';
+import Contact from './page/contacts/Contact';
 
 function App() {
+
   return (
-    <div className="App container">
-      <h1 className='text-center'>Brew Ninja Test App</h1>
-    </div>
+    <Contact />
   );
 }
 
